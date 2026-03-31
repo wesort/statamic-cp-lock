@@ -1,0 +1,60 @@
+{
+    "name": "wesort/statamic-cp-lock",
+    "description": "A Statamic addon to temporarily lock the Control Panel, preventing content modifications while allowing browsing.",
+    "type": "statamic-addon",
+    "license": "MIT",
+    "keywords": [
+        "statamic",
+        "addon",
+        "control-panel",
+        "lock",
+        "read-only",
+        "maintenance"
+    ],
+    "authors": [
+        {
+            "name": "We Sort",
+            "homepage": "https://wesort.co.uk"
+        }
+    ],
+    "homepage": "https://github.com/wesort/statamic-cp-lock",
+    "support": {
+        "issues": "https://github.com/wesort/statamic-cp-lock/issues",
+        "source": "https://github.com/wesort/statamic-cp-lock"
+    },
+    "autoload": {
+        "psr-4": {
+            "WeSort\\CpLock\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WeSort\\CpLock\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "statamic/cms": "^5.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "CP Lock",
+            "description": "Temporarily lock the Statamic Control Panel to prevent content modifications."
+        },
+        "laravel": {
+            "providers": [
+                "WeSort\\CpLock\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
