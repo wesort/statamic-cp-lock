@@ -47,6 +47,15 @@ Users can still:
 - View entries
 - Navigate all pages
 
+This toast notification is displayed to users when they attempt to save. 
+
+<img width="825" height="78" alt="CP locked message" src="https://github.com/user-attachments/assets/9ad384cf-7008-413e-b2bd-b35dd8eb45ef" />
+
+
+If they wait (and don't refresh or navigate away from the current page), they can save as normal once the control panel is unlocked. 
+
+Users are not notified of the locking occuring - only when the try to save. 
+
 ### Unlock the Control Panel
 
 ```bash
